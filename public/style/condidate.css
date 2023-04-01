@@ -1,0 +1,170 @@
+.cond-info{
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-fr);
+}
+
+.grid-form{
+    background-color: var(--color-pr);
+    border-radius: var(--border-raduis-sc);
+    padding:20px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    row-gap: 30px;
+    font-weight: 500;
+    column-gap: 20px;
+}
+.form-field{
+    padding: 2px;
+    position: relative;
+    border-radius: 2px;
+    border: 1.5px solid var(--color-fr);
+    transition: all 300ms  ease;
+}
+
+.form-field input, .form-field select{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 35px;
+    z-index: 2;
+}
+.form-field label {
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    color: var(--color-fr);
+    background-color: var(--color-pr);
+}
+.span-2{
+    position: relative;
+    width: 100%;
+    grid-column: 1/3;
+}
+.file{
+    opacity: 1;
+    z-index: 10;
+}
+.file-uplead{
+    height: 100px;
+    border: 2px dashed var(--color-tr);
+}
+.file-uplead::after{
+    content: 'drager un fichier pdf';
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    font-size: 12px;
+    color: var(--color-fr);
+}
+.file{
+    transform: translateX(90px);
+    opacity: 1;
+    color: var(--color-fr);
+    background-color: transparent;
+    z-index: 2;
+}
+.file::-webkit-file-upload-button{
+    background-color: transparent;
+    height: 70px;
+    width: 300px;
+    color: transparent;
+    border: none;
+}
+
+.msg{
+    transform: translateY(6px);
+    position: absolute;
+    color: var(--color-tr);
+}
+.span-full{
+    width: 100%;
+    column-gap: 50%;
+}
+.grid-form .material-icons-sharp{
+    position: absolute;
+    transform: translateY(-6px);
+    color: var(--color-tr);
+}
+.form-btn{
+    grid-column: 1/3;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+.cond-btn{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
+    background-color: var(--color-sc);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.cond-btn:hover{
+    transform: scale(1.05);
+}
+.cond-sub{
+    background-color: var(--color-tr);
+    color: var(--color-pr);
+}
+
+.error-mssg{
+    position: absolute;
+    bottom: -15px;
+    font-size: 10px;
+    color: var(--color-dg);
+}
+
+.cond-added{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    transform: translateX(-50%,-50%);
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: var(--color-pr);
+    background-color: var(--color-su);
+}
+.cond-deleted{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    transform: translateX(-50%,-50%);
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: var(--color-pr);
+    background-color: var(--color-dg);
+}
+.cond-updated{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    transform: translateX(-50%,-50%);
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: var(--color-pr);
+    background-color: var(--color-al);
+}
+.del-cond{
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: var(--color-dg);
+    color: var(--color-pr);
+}
+
+
+.btn-cv{
+    background-color: var(--color-su);
+    color: var(--color-pr);
+    width: 207%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    transition: all 300ms ease;
+}
+.btn-cv:hover{
+    transform: scale(1.02);
+}

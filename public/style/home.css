@@ -1,0 +1,209 @@
+@import url(index.css);
+
+.container{
+    background-color: var(--color-sc);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    padding: 10px;
+}
+
+/* NAVIGATION */
+.nav{
+    background-color: var(--color-pr);
+    border-radius: var(--border-raduis-sc);
+    padding: 10px 0 5px 30px;
+    row-gap: 30px;
+}
+.nav h1{font-weight: 500;}
+.lg{color: var(--color-tr);}
+.profile{
+    font-weight: 500;
+    column-gap: 10px;
+    border: 2px solid var(--color-sc);
+    border-radius: var(--border-raduis-sc);
+    padding: 10px;
+    transform: translateX(-15px);
+}
+.profile:hover{border-color: var(--color-tr);}
+.profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profile p{color: var(--color-tr);}
+.profile small{
+    color: var(--color-dg); 
+    font-size: 8px;
+    width: max-content;
+    padding: 2px;
+    border-radius: var(--border-raduis-pr);
+    background-color: var(--color-sc);
+}
+
+.nod-links{row-gap: 25px;}
+.nod-link:hover{
+    transform: translateX(10px);
+    color: var(--color-tr);
+}
+.active{transform: translateX(10px);}
+.active > *{color: var(--color-tr);}
+.nod-link{
+    color: var(--color-fr);
+    font-size: 18px;
+    column-gap: 10px;
+    font-weight: 500;
+}
+.last{margin-top: 100px;}
+.last:hover{color: var(--color-dg);}
+
+
+
+/* JOBS */
+.jobs{
+    overflow-y: scroll;
+}
+
+/*-> search */
+.search input{
+    border: none;
+    height: 40px;
+    width: 450px;
+    padding: 5px 50px;
+    border-top-left-radius: var(--border-raduis-sc);
+    border-bottom-left-radius: var(--border-raduis-sc);
+}
+button{
+    background-color: var(--color-pr);
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 5px;
+    color: var(--color-fr);
+}
+#search{
+    background-color: var(--color-tr);
+    color: var(--color-pr);
+    border-top-right-radius: var(--border-raduis-sc);
+    border-bottom-right-radius: var(--border-raduis-sc);
+    
+}
+.reset-filter{
+    background-color: var(--color-pr);
+    color: var(--color-fr);
+    padding: 0 5px;
+}
+.reset-filter:hover{
+    background-color: var(--color-sc);
+    color: var(--color-tr);
+
+}
+/* Jobs nods */
+.jobs-nods{
+    width: 100%;
+    row-gap: 10px;
+}
+.jtp{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 96%;
+    font-size: 10px;
+    font-weight: 500;
+}
+.jtp span{color: var(--color-dg); margin: 0 5px;}
+#time-filter{
+    padding: 0px 5px;
+    background-color: transparent;
+    border: 1px solid var(--color-fr);
+    border-radius: var(--border-raduis-sc);
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+/* job nod */
+.jnd{
+    font-weight: 500;
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    background-color: var(--color-pr);
+    width: 90%;
+    min-height: 180px;
+    padding: 10px 5px;
+    border-radius: var(--border-raduis-pr);
+    font-size: 16px;
+    cursor: pointer;
+}
+.jnd:hover{transform: scale(1.03);}
+.jnd .material-icons-sharp{
+    font-size: 16px;
+    color: var(--color-fr);
+}
+.jnd small{
+    color: var(--color-fr);
+
+}
+.jnd-active{border: 2px solid var(--color-t);}
+.jnd img{
+    max-width: 100%;
+    background-color:var(--color-sc);
+    padding: 5px;
+    border-radius: var(--border-raduis-pr);
+}
+#save{
+    background-color: transparent;
+    margin-left: 50px;
+}
+#save:hover{transform: scale(1.5); color: red;}
+
+
+/* aside  */
+.job-selected{
+    position: relative;
+    background-color: var(--color-pr);
+    border-top-right-radius: var(--border-raduis-sc);
+    border-bottom-right-radius: var(--border-raduis-sc);
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.job-selected small{
+    color: var(--color-fr);
+}
+.job-selected h1{text-align: center;}
+.line{
+    background-color: var(--color-sc);
+    height: 3px;
+    width: 90%;
+}
+.job-selected img{
+    max-width: 100%;
+    padding: 5px;
+    border-radius: var(--border-raduis-sc);
+    background-color: var(--color-sc);
+}
+.job-selected a{
+    position: absolute;
+    background-color: var(--color-tr);
+    color: var(--color-pr);
+    width: 70%;
+    border-radius: var(--border-raduis-sc);
+    bottom: 10%;
+    padding: 5px 0;
+    box-shadow: 0 0rem 0.5rem rgb(219, 219, 219);
+    text-align: center;
+}
+.job-selected a:hover{transform: scale(1.03); filter: brightness(95%);}
+
+p.pending,
+p.available,
+p.filled{
+    border-radius: 4px;
+    width: 100px;
+    text-align: center;
+    color: var(--color-pr);
+}
+
+p.available{background-color: var(--color-su);}
+p.filled{background-color: var(--color-dg);}
+p.pending{background-color: var(--color-al);}

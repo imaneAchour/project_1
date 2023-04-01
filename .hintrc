@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-tap-highlight-color",
+          "-webkit-text-size-adjust",
+          "scroll-behavior",
+          "text-decoration-skip-ink",
+          "text-align: -webkit-match-parent"
+        ]
+      }
+    ]
+  }
+}
